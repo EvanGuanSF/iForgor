@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="menu.css"/>
+    <script type="module" src="menu.js"></script>
+  </head>
+
+<body>
+  <div id="menu">
+    <div>
+      <b>URL Whitelist</b>
+    </div>
+    <button id="saveButton" class="button save">Save</button>
+    <div id="statusText">Status: OK</div>
+    <textarea id="whitelist"></textarea>
+    <br>
+    Enter URL match patterns here.
+    <br>
+    <button id="cleanHistoryButton" class="button cleanupVisitHistory">Clean Visit History</button>
+  </div>
+  <div id="error-content" class="hidden">
+    <p id="error-text">Could not load menu.</p>
+  </div>
+</body>
+
+</html>

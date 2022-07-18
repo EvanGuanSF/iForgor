@@ -1,0 +1,40 @@
+:root {
+  --blackish: #252627;
+  --purply: #8A4FFF;
+  --dblueish: #5BC0EB;
+  --lavenderish: #ADBDFF;
+  --rosey: #904E55;
+  --gold: #CBA135;
+  --khaki: #BFB48F;
+  --whiteish: #F2EFE9;
+}
+
+html {
+	background-color: var(--khaki);
+	color: var(--blackish);
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+	background-color: var(--whiteish);
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+  font-size: 12;
+  cursor: pointer;
+}
+
+#menu {
+  resize: none;
+}
+
+#whitelist {
+	background-color: var(--whiteish);
+	color: var(--blackish);
+  width: 550px;
+  height: 400px;
+  resize: none;
+}

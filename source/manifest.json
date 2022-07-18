@@ -1,0 +1,32 @@
+{
+	"name": "iForgor",
+	"version": "1.0.1",
+	"description": "Displays the last visited date of filtered web pages in an html element using data stored in local storage key-value pairs.",
+	"homepage_url": "https://evanguan.com",
+	"manifest_version": 2,
+	"minimum_chrome_version": "80",
+	"permissions": [
+		"storage",
+		"tabs",
+		"unlimitedStorage"
+	],
+  "browser_action": {
+    "default_icon": "icons/border-48.png",
+    "default_title": "iForgor",
+    "default_popup": "popup/menu.html"
+  },
+	"content_scripts": [
+		{
+			"matches": [ "<all_urls>" ],
+			"js": [ "content.js" ],
+			"css": [ "content.css" ],
+			"run_at": "document_end"
+		}
+	],
+	"background": {
+		"persistent": false,
+		"scripts": [
+			"background.js"
+		]
+	}
+}

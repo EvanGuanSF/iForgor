@@ -1,0 +1,38 @@
+:root {
+  --blackish: #252627;
+  --purply: #8A4FFF;
+  --dblueish: #5BC0EB;
+  --lavenderish: #ADBDFF;
+  --rosey: #904E55;
+  --gold: #CBA135;
+  --khaki: #BFB48F;
+  --whiteish: #F2EFE9;
+
+  --bannerHeight: 18px;
+}
+
+#paddingDiv {
+  height: auto;
+  padding-bottom: var(--bannerHeight);
+}
+
+#lastVisitedText {
+	color: var(--blackish);
+	background:  var(--khaki);
+  font-family: Verdana;
+  font-size: 14px;
+
+  z-index: 2000;
+  display: block;
+
+  height: var(--bannerHeight);
+
+  text-align: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  border: none;
+}
